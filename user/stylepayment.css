@@ -1,0 +1,67 @@
+/* Style for Payment Details page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px #999;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group-addon {
+  background-color: #f5f5f5;
+  border: none;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.btn-primary:hover {
+  background-color: #2e6da4;
+  border-color: #94989b;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
