@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(104, 99, 99, 0.5);
+    width: 700px;
+    border-radius: 9.5px;
+    box-shadow: inset -5px -5px rgba(44,43,43,0.5);
+}
+h1{
+    color: black;
+    font-size: 3rem;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+}
+.productname{
+    padding: 5px;
+    margin: 10px;
+    width: 70%;
+}
+.productprice{
+    padding: 5px;
+    margin: 10px;
+    width: 70%;
+}
+.productimage{
+    padding: 5px;
+    margin: 10px;
+    width: 70%;
+}
+.productquantity{
+    padding: 5px;
+    margin: 10px;
+    width: 70%;
+}
+.productcategories{
+    padding: 5px;
+    margin: 10px;
+    width: 70%;
+}
