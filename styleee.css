@@ -1,0 +1,97 @@
+
+    .back{
+        background-image:url('images/bgimage.jpg');
+        background-size: 100%;
+        background-position:center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:700px;
+        width:1600px;
+        padding-top: 20px;
+    }
+    #disease-form {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 50px;
+      box-shadow: 0 0 40px rgba(5, 5, 5, 0.5);
+      text-align: center;
+      width:600px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgb(197, 197, 178));
+	backdrop-filter: blur(1px);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+
+     button:hover{
+      background-color:black;
+
+    }
+
+    #result {
+      margin-top: 15px;
+      font-weight: lighter;
+      font-size: 20px;
+      font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif ;
+    }
+    #result1 {
+      margin-top: 15px;
+      font-weight:lighter;
+      font-size: 20px;
+      font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif ;
+    }
+    h2{
+      margin: 10px;
+      font-size: 35px;
+      font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif ;
+      padding-bottom: 30px;
+  }
+  h3{
+    padding-right: 400px;
+    font-size: 25px;
+    font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif ;
+    font-weight:lighter;
+  }
+  .btnpadd{
+    padding-top:20px;
+    
+  }
+
+  .btn12{
+    padding-right:90px;
+  }
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 257px;
+    left:50px;
+    right: 50px;
+    
+  }
+  .autocomplete-items div {
+    padding: 0px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  
+  

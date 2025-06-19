@@ -1,0 +1,171 @@
+*margin{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    
+    background-color: rgba(255,255,255, 0.6);
+	backdrop-filter: blur(5px);
+    box-shadow: 3px 3ps 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 30px;
+    padding-bottom: 10px;
+}
+nav a{
+    height: 100%;
+    padding: 0 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: aliceblue;
+}
+nav li:first-child{
+    margin-right:auto;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255,255,255, 0.6);
+	backdrop-filter: blur(5px);
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+}
+.sidebar li{
+	width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.hme1{
+	background-image:url('../images/pett.jpg');
+	background-size: 100%;
+    background-position:center;
+    height:700px;
+    width:1520px;
+}
+.padding{
+	padding-right:1100px;
+} 
+.container1{
+    width: 600px;
+    height: 700px;
+    margin: -16px auto;
+}
+.glass{
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgb(197, 197, 178));
+	backdrop-filter: blur(1px);
+	border-radius: 1px;
+	border:0.1px solid rgba(255, 255, 255, 0.10);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.homeh1{
+	text-align:center;
+	color:black;
+	padding-top:200px;
+	font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif}
+
+.p1{
+        text-align:center;
+        color:rgb(24, 26, 26);
+        font-family:"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size:medium;
+    }
+.btn1pad{
+        padding-left:200px;
+    }
+    button{
+        position:relative;
+        width: 200px;
+        height: 50px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 20px 10px;
+        font-weight:bold;
+        border: 2px solid black;
+        border-radius: 20px;
+        background:transparent;
+        color: black;
+        cursor:pointer;
+        overflow:hidden;
+    }
+    span{
+        background:white;
+        height:100%;
+        width: 0;
+        position:absolute;
+        left: 0;
+        bottom:0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width:100%;
+    }
+.background11{
+    background-image: url(images/pett.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.headtop{
+    padding-left:200px;
+	padding-bottom:50px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.ptag{
+	padding-left:150px;
+	font-size:larger;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.btn2{
+	padding-right:25px;
+}
+.btn1pad{
+	padding-left:160px;
+}
+.imgpadbtm{
+	padding-bottom:20px;
+	padding-top:30px;
+}
+.img-shadow{
+	box-shadow: 5px 5px 30px #555;
+	border-radius: 40px;
+}
+.htpad{
+    padding-top:20px;
+    padding-left:250px;
+}
+.btn2pad{
+    padding-left:200px;
+}
+.fontsize{
+    font-size: larger;
+}
+.btnfont{
+    font-size:15px;
+}

@@ -1,0 +1,145 @@
+.card{
+    height: 500px;
+    margin: 60px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.card-container {
+  width: 1480px;
+  margin: 0 auto;
+}
+
+.card p {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.card-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 2fr);
+}
+.intro{
+    height: 70px;
+    width: 360px;
+    padding: -7px;
+    bottom:-7px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.h1{
+    margin: 10px;
+    font-size: 40px;
+    font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif ;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    padding-bottom: 20px;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 320px;
+    bottom: -7px;
+    background:rgb(27, 27, 27, .5);
+
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.img{
+    height: 500px;
+    width: 360px;
+    border-radius: 30px;
+}
+.card:hover button{
+    visibility: visible;
+}
+
+button:hover{
+    background-color:black;
+  }
+  .paddingbtn{
+    padding-left:200px;
+}
+.intro1{
+    height: 70px;
+    width: 360px;
+    padding: -7px;
+    bottom: -7px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.card:hover .intro1{
+    height: 320px;
+    bottom: -7px;
+    background:rgb(27, 27, 27, .5);
+
+}
+.intro2{
+    height: 70px;
+    width: 360px;
+    padding: -7px;
+    bottom: -7px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.card:hover .intro2{
+    height: 320px;
+    bottom: -7px;
+    background:rgb(27, 27, 27, .5);
+
+}
+.intro3{
+    height: 70px;
+    width: 360px;
+    padding: -7px;
+    bottom: -7px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.card:hover .intro3{
+    height: 320px;
+    bottom: -7px;
+    background:rgb(27, 27, 27, .5);
+
+}
+.mainh1{
+    padding-left:700px;
+    padding-top:30px;
+    font-size:50px;
+}
+.main{
+    padding-left:20px;
+}
+
+.h33{
+  padding-left:80px;
+}
+
+

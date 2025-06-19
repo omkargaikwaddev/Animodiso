@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Riddhi Siddhi Enterprises</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding:5px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease;
+        }
+        nav {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+            text-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        header {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #2D336B;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #2D336B;
+            transform: translateY(-2px);
+            transition: transform 0.3s ease;
+        }
+
+        .about-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            </div>
+            <img src="image/rsLogo.png" alt="Riddhi Siddhi Enterprises Logo" style="height: 100px; margin-right: 20px; vertical-align: middle;">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <a href="sampleProj.html"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="product.html"><i class="fas fa-store"></i> Shop</a>
+            <a href="#faqs"><i class="fas fa-question-circle"></i> FAQs</a>
+            <a href="#cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+            <script>
+                function highlightAbout() {
+                    const aboutParagraph = document.querySelector('.about-section p');
+                    if (aboutParagraph) {
+                        // Add a highlight animation class
+                        aboutParagraph.classList.add('highlight-animation');
+                        
+                        // Remove the animation class after it completes
+                        setTimeout(() => {
+                            aboutParagraph.classList.remove('highlight-animation');
+                        }, 1000);
+
+                        // Scroll to the about section
+                        aboutParagraph.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        console.error('About paragraph not found');
+                    }
+                }
+            </script>
+            <style>
+                @keyframes highlightPulse {
+                    0% { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+                    50% { background: linear-gradient(135deg, #FFEDFA 0%, #c3cfe2 100%); }
+                    100% { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+                }
+                
+                .highlight-animation {
+                    animation: highlightPulse 1s ease;
+                }
+            </style>
+        </nav>
+    </header>
+
+<body>
+    <style>
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #2D336B, #4B0082);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(45, 51, 107, 0.2);
+        }
+
+        .btn-cart {
+            background: white;
+            color: #2D336B;
+            border: 2px solid #2D336B;
+        }
+
+        .btn-cart:hover {
+            background: #2D336B;
+            color: white;
+        }
+    </style>
+
+    <div class="container">
+        <h1 style="font-family: 'Montserrat', sans-serif; background: linear-gradient(45deg, #2D336B, #4B0082); color: white; padding: 10px 20px; border-radius: 8px; margin-bottom: 30px;">Our Products</h1>
+        <style>
+            .btn:hover {
+                transform: scale(1.05) rotate(2deg);
+                box-shadow: 0 6px 12px rgba(45, 51, 107, 0.3);
+            }
+
+            .btn-cart:hover {
+                background: rgba(255, 255, 255, 0.9);
+                color: #2D336B;
+                border-width: 3px;
+                border-style: dashed;
+                animation: borderDance 1.5s linear infinite;
+            }
+
+            @keyframes borderDance {
+                0% {
+                    border-style: dashed;
+                    transform: rotate(0deg);
+                }
+                25% {
+                    border-style: dotted;
+                    transform: rotate(1deg);
+                }
+                50% {
+                    border-style: double;
+                    transform: rotate(0deg);
+                }
+                75% {
+                    border-style: dotted;
+                    transform: rotate(-1deg);
+                }
+                100% {
+                    border-style: dashed;
+                    transform: rotate(0deg);
+                }
+            }
+        </style>
+         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 20px; background-color: rgba(248, 249, 250, 0.9); border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); backdrop-filter: blur(5px); position: relative;">
+            <style>
+                button {
+                    transition: all 0.3s ease !important;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                button:hover {
+                    transform: translateY(-3px) scale(1.05) !important;
+                    box-shadow: 0 5px 15px rgba(45, 51, 107, 0.4) !important;
+                }
+
+                button:active {
+                    transform: translateY(1px) scale(0.98) !important;
+                }
+
+                button::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(
+                        120deg,
+                        transparent,
+                        rgba(255, 255, 255, 0.2),
+                        transparent
+                    );
+                    transition: 0.5s;
+                }
+
+                button:hover::before {
+                    left: 100%;
+                }
+
+                button:hover {
+                    background: linear-gradient(45deg, #2D336B, #4B0082) !important;
+                    color: white !important;
+                    letter-spacing: 0.5px;
+                }
+            </style>
+            <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px; border-radius: 10px; text-align: center; height: 100%; display: flex; flex-direction: column;">
+                <img src="image/blueHand.png" alt="Safety Gloves" style="max-width: 200px; height: auto; border-radius: 8px; margin: 0 auto; transition: all 0.5s ease;" onmouseover="this.style.transform='translateY(-10px) scale(1.1)'; this.style.filter='drop-shadow(0 10px 15px rgba(45, 51, 107, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='none'">
+                <h3 style="font-family: 'Montserrat', sans-serif; color: #2D336B; margin: 15px 0;">Safety Gloves</h3>
+                <p style="font-family: 'Montserrat', sans-serif; margin-bottom: 20px; flex-grow: 1;">Heavy-duty safety gloves with reinforced palm grip. Ideal for industrial and construction work.</p>
+                <div style="display: flex; gap: 10px; justify-content: center; margin-top: auto;">
+                    <button style="background: #2D336B; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                    <button style="background: #4B0082; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+                </div>
+            </div>
+            <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                <img src="image/blue Hand Gloves.png" alt="Blue Threaded Hand Gloves" style="max-width: 200px; height: auto; border-radius: 8px; transition: all 0.5s ease;" onmouseover="this.style.transform='translateY(-10px) scale(1.1)'; this.style.filter='drop-shadow(0 10px 15px rgba(45, 51, 107, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='none'">
+                <h3 style="font-family: 'Montserrat', sans-serif; color: #2D336B; margin: 15px 0;">Blue Threaded Hand Gloves</h3>
+                <p style="font-family: 'Montserrat', sans-serif; margin-bottom: 20px;">Premium quality blue threaded hand gloves perfect for industrial use. Provides excellent grip and protection.</p>
+                <div style="display: flex; gap: 10px; justify-content: center;">
+                    <button style="background: #2D336B; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                    <button style="background: #4B0082; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                <img src="image/nylon.png" alt="Nylon Safety Hand Gloves" style="max-width: 200px; height: auto; border-radius: 8px; transition: all 0.5s ease;" onmouseover="this.style.transform='translateY(-10px) scale(1.1)'; this.style.filter='drop-shadow(0 10px 15px rgba(45, 51, 107, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='none'">
+                <h3 style="font-family: 'Montserrat', sans-serif; color: #2D336B; margin: 15px 0;">Nylon Safety Hand Gloves</h3>
+                <p style="font-family: 'Montserrat', sans-serif; margin-bottom: 20px;">Premium nylon safety gloves with PU coating for enhanced grip. Breathable, lightweight and ideal for precision work. Features excellent dexterity and abrasion resistance. Perfect for assembly, packaging and general handling tasks.</p>
+                <div style="display: flex; gap: 10px; justify-content: center;">
+                    <button onclick="addToCart(<?php echo $product['id']; ?>)" style="background: #2D336B; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+                    <button onclick="buyNow(<?php echo $product['id']; ?>)" style="background: #4B0082; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                
+                <img src="image/grey_enhanced.png" alt="Grey Threaded Hand Gloves" style="max-width: 200px; height: auto; border-radius: 8px; transition: all 0.5s ease;" onmouseover="this.style.transform='translateY(-10px) scale(1.1)'; this.style.filter='drop-shadow(0 10px 15px rgba(45, 51, 107, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='none'">
+                <h3 style="font-family: 'Montserrat', sans-serif; color: #2D336B; margin: 15px 0;">Grey Threaded Hand Gloves</h3>
+                <p style="font-family: 'Montserrat', sans-serif; margin-bottom: 20px;">Premium quality grey threaded hand gloves perfect for industrial use. Provides excellent grip and protection..</p>
+                <div style="display: flex; gap: 10px; justify-content: center;">
+                    <button style="background: #2D336B; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                    <button style="background: #4B0082; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+                    <button style="background: #2D336B; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">View Details</button>
+                    </div>
+            </div>
+             <style>
+                .products-section button:hover {
+                    background: linear-gradient(45deg, #4B0082, #2D336B) !important;
+                    transform: scale(1.1) !important;
+                    box-shadow: 0 0 15px rgba(45, 51, 107, 0.3);
+                    transition: all 0.3s ease;
+                }
+             </style>
+        </div>
+    </div>
+
+    <script>
+function addToCart(productId) {
+    fetch('api/add-to-cart.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            productId: productId,
+            quantity: 1
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if(data.success) {
+            alert('Product added to cart!');
+            updateCartCount();
+        } else {
+            alert('Error adding product to cart');
+        }
+    });
+}
+
+function buyNow(productId) {
+    // First add to cart
+    addToCart(productId);
+    // Then redirect to checkout
+    window.location.href = 'checkout.php';
+}
+
+function updateCartCount() {
+    fetch('api/get-cart-count.php')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('cart-count').textContent = data.count;
+    });
+}
+</script>
+    </script>
+    <footer style="background: linear-gradient(45deg, #3D4380, #6B2099); color: white; padding: 15px 0; margin-top: 30px; font-family: 'Montserrat', sans-serif; text-align: center;">
+        <div style="display: flex; justify-content: space-around; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+            <!-- Where We Are Section -->
+            <div style="text-align: center;">
+                <h3 style="margin-bottom: 15px; font-size: 1.2em;">Where We Are <i class="fas fa-map-marker-alt" style="color: white; margin-left: 5px;"></i></h3>
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <p style="margin: 0;"> Additional MIDC Satara, 415004</p>
+                </div>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div style="text-align: center;">
+                <h3 style="margin-bottom: 15px; font-size: 1.2em;">Connect With Us</h3>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <a href="#" style="color: white; text-decoration: none; transition: all 0.3s ease;">
+                        <i class="fab fa-facebook-f" style="font-size: 24px;" onmouseover="this.style.transform='rotate(360deg) scale(1.2)'; this.style.color='#4267B2'" onmouseout="this.style.transform='rotate(0) scale(1)'; this.style.color='white'"></i>
+                    </a>
+                    <a href="#" style="color: white; text-decoration: none; transition: all 0.3s ease;">
+                        <i class="fab fa-twitter" style="font-size: 24px;" onmouseover="this.style.transform='translateY(-5px) scale(1.2)'; this.style.color='#1DA1F2'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.color='white'"></i>
+                    </a>
+                    <a href="#" style="color: white; text-decoration: none; transition: all 0.3s ease;">
+                        <i class="fab fa-instagram" style="font-size: 24px;" onmouseover="this.style.transform='rotate(-45deg) scale(1.2)'; this.style.color='#E1306C'" onmouseout="this.style.transform='rotate(0) scale(1)'; this.style.color='white'"></i>
+                    </a>
+                    <a href="#" style="color: white; text-decoration: none; transition: all 0.3s ease;">
+                        <i class="fab fa-linkedin-in" style="font-size: 24px;" onmouseover="this.style.transform='translateX(5px) scale(1.2)'; this.style.color='#0077B5'" onmouseout="this.style.transform='translateX(0) scale(1)'; this.style.color='white'"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <p style="margin: 5px 0;">No Copyright Claimed</p>
+            <p style="margin: 5px 0;">For more information, contact: <a href="mailto:riddhisiddhi.satara@gmail.com" style="color: white; text-decoration: none; border-bottom: 1px dotted white;">riddhisiddhi.satara@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+nav{
+    
+    background-color: burlywood;
+    box-shadow: 3px 3ps 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 60px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+nav a{
+    height: 100%;
+    padding: 0 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: aliceblue;
+}
+nav li:first-child{
+    margin-right:auto;
+}
+header h1{
+	font-size:25px;
+	padding-top:25px;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255,255,255, 0.6);
+	backdrop-filter: blur(5px);
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+}
+.sidebar li{
+	width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.logoo{
+	
+	padding-bottom: 12px;
+}
+.select{
+	padding-top: 8px;
+}
+.head-img{
+	
+	padding-top:10px;
+}

@@ -1,0 +1,28 @@
+.thumbnail {
+			padding: 10px;
+			border: 1px solid #ccc;
+			background-color: rgb(229, 198, 156);
+			text-align: center;
+		}
+		.thumbnail img {
+			width: 100%;
+			height: a;
+		}
+		.caption {
+			padding: 5px;
+		}
+	
+		.row {
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.col-md-3 {
+			flex: 0 0 24%;
+			margin-bottom: 20px;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
